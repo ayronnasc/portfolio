@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+}
+
+.aside{
+    height: 100vh;
+    flex-grow: 2;
+    background-color: rgb(1, 2, 24);
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+h2.name{
+    text-align: center;
+}
+
+.aside .profile-area{
+    margin: 5%;
+}
+
+.aside .option-area{
+    
+    margin-top: 10%;
+    margin: 3%;
+}
+
+.aside .option-area .list-options{
+    list-style-type: none;
+}
+
+.aside .profile-area{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aside .profile-area  #profileImage{
+    width: 30%;
+    border-radius: 49%;
+    margin-bottom: .5rem;
+}
+
+.aside .profile-area h2{
+    color: white;
+    font-weight: 600;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.social-area{
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+.social-area .list-button-social{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+.social-area .list-button-social a{
+    text-decoration: none;
+}
+
+.social-area .list-button-social .btn{
+    font-size: 20px;
+    color: white;
+    padding: 2px;
+    
+}
+
+.social-area .list-button-social div{
+    background-color: rgb(66, 66, 66);
+    padding: 10px;
+    margin: 0 0.3rem;
+    border-radius: 20px;
+}
+
+.option-area{
+    width: 100%;
+    padding-left: 5%;
+}
+
+.option-area .list-options{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.option-area .list-options .option a{
+    text-decoration: none;
+
+}
+
+.option-area .list-options .focus a{
+    text-decoration: none;
+
+}
+
+.option-area .list-options .option i{
+    font-size: 25px;
+    color: rgb(109, 109, 109);
+    animation: iconColorReverse forwards;
+    animation-duration: 0.5s;
+
+}
+
+.option-area .list-options .option{
+    margin-bottom: 10%;
+}
+/*mouse animations */
+
+
+.option-area .list-options .option a span{
+    padding-left: 10px;
+    font-size: 20px;
+    color: rgb(109, 109, 109);
+    font-weight: 700;
+    animation: textColorReverse forwards;
+    animation-duration: 0.5s;
+}
+
+.focus a span{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    animation: textColor forwards;
+    animation-duration: 0.7s;
+}
+
+.option-area .list-options .focus i{
+    font-size: 25px;
+    animation: iconColor forwards;
+    animation-duration: 0.7s;
+}
+
+
+@keyframes iconColor{
+    0%{
+        color: rgb(109, 109, 109);
+    }
+    100%{
+        color: rgb(57, 121, 181);
+    }
+}
+@keyframes iconColorReverse{
+    0%{
+        color: rgb(57, 121, 181);
+        
+    }
+    100%{
+        color: rgb(109, 109, 109);
+    }
+}
+@keyframes textColor{
+    0%{
+        color: rgb(109, 109, 109);
+    }
+    100%{
+        color: white;
+    }
+}
+@keyframes textColorReverse{
+    0%{
+        color: white;
+    }
+    100%{
+        color: rgb(109, 109, 109);
+    }
+}
+
+.option-area .list-options .focus{
+    margin-bottom: 10%;
+}
+
+
+/* MAIN AREA */
+
+.main-content{
+    height: 100%;
+    width: 80%;
+    flex-grow: 8;
+    background-color:rgb(65, 160, 255);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.home .text-area h1{
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+
+}
+.home{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content{
+    background-color: rgb(0, 180, 120);
+}

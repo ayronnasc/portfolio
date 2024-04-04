@@ -256,9 +256,27 @@ h2.name {
 }
 
 .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-start;
     height: 100vh;
     width: 100%;
-    background-color: green;
+    background-color: rgb(2, 2, 30);
+}
+
+.about .text-area {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+.about .text-area p{
+    margin: 5px 0;
 }
 
 .resume {

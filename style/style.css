@@ -280,9 +280,17 @@ h2.name {
 }
 
 .resume {
+    display: flex;
+    justify-content: end;
     height: 100%;
     width: 100%;
-    background-color: rgb(0, 128, 98);
+    background-color: #05053B;
+}
+
+#cartazav
+{
+    max-width: 80%;
+    max-height: 100%;
 }
 
 .portfolio {
